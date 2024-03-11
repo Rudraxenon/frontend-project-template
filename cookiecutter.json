@@ -1,0 +1,19 @@
+{
+    "project_name": "frontend-project",
+    "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+    "angular_slug": "app-{{ cookiecutter.project_slug }}",
+    "react_slug": "{{ cookiecutter.project_slug }}-app",
+    "project_description": "Frontend Project Template",
+    "framework": {
+        "type": "select",
+        "options": ["angular", "react"],
+        "default": "angular",
+        "prompt": "Choose a framework (angular or react)"
+    },
+    "testing_framework": {
+        "type": "select",
+        "options": ["Jest", "Jasmine", "Karma", "Mocha"],
+        "default": "Jest",
+        "prompt": "Choose a framework (Jest, Jasmine, Karma or Mocha)"
+    }
+}
